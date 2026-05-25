@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Snek</title>
+    <script src="snaking.js"></script>
+</head>
+
+<body style="text-align: center; background-color: black; color: white; font-family: Arial, sans-serif;">
+
+    <h1>Multimedia Snake Game</h1>
+
+    <p style="font-size: 1.2rem">Use WASD keys to move the snake</p>
+    <canvas id="board"></canvas>
+
+    <p id="score" style="font-size: 1.2rem">Score: 0</p>
+
+    <div id="gameOver" style="display: none; position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%);">  <!-- hidden by default, shown on game over -->
+        <h2 style="color: red;">Game Over!</h2>
+        <button onclick="restartGame()">Try Again</button>
+    </div>
+    
+</body>
+</html>
